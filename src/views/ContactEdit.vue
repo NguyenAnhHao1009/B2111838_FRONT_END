@@ -38,7 +38,7 @@ export default {
       } catch (error) {
         console.log(error);
         // Chuyển sang trang NotFound đồng thời giữ cho URL không đổi
-        this.$router.push({
+        this.$router.push({ 
           name: "notfound",
           params: {
             pathMatch: this.$route.path.split("/").slice(1),

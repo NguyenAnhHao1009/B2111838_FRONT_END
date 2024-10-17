@@ -61,7 +61,7 @@
       >
         Xóa
       </button>
-      <button type="button" class="ml-2 btn btn-danger" @click="Cancel">
+      <button type="button" class="ml-2 btn btn-danger" @click="cancel">
         Thoát
       </button>
     </div>
@@ -113,7 +113,7 @@ export default {
     deleteContact() {
       this.$emit("delete:contact", this.contactLocal.id);
     },
-    Cancel() {
+    cancel() {
       const reply = window.confirm(
         "You have unsaved changes! Do you want to leave?"
       );
